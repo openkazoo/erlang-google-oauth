@@ -1,0 +1,10 @@
+{application, 'google_oauth', [
+	{description, ""},
+	{vsn, "1.0.0"},
+	{modules, []},
+	{registered, [google_oauth_sup]},
+	{applications, [kernel,stdlib,inets,crypto,public_key,ssl,lager,jsx,base64url]},
+	{optional_applications, []},
+	{mod, {google_oauth_app, []}},
+	{env, []}
+]}.
